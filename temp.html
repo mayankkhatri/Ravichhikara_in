@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 4.5vh 40.5vh; /* 10% and 90% of 45vh */
+        height: 45vh;
+        gap: 10px; /* Added gap between cells */
+      }
+
+      .cell {
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* First column */
+      .c1r1 {
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      .c1r2 {
+        grid-column: 1;
+        grid-row: 2;
+        height: 4.5vh; /* 90% of 45vh */
+      }
+
+      /* Second column */
+      .c2r1 {
+        grid-column: 2;
+        grid-row: 1 / span 2; /* Spans both rows */
+        height: 4.5vh; /* 90% of 45vh */
+      }
+
+      .c2r2 {
+        grid-column: 2;
+        grid-row: 2;
+        align-self: end; /* Aligns to bottom */
+        height: 40.5vh; /* 10% of 45vh */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="cell c1r1">C1R1 (10%)</div>
+      <div class="cell c1r2">C1R2 (90%)</div>
+      <div class="cell c2r1">C2R1 (90%)</div>
+      <div class="cell c2r2">C2R2 (10%)</div>
+    </div>
+  </body>
+</html>

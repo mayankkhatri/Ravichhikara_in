@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Qwitcher+Grypen:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Geist", sans-serif;
+}
+
+/*! Ravi's Hero Section  */
+/*? Ravi's Image BG  */
+.ravi-image {
+  /* Sizing  */
+  height: calc(25vw + 50vh);
+  width: 100vw;
+  /* Image size */
+  background-image: url("https://i.postimg.cc/2S30zZMv/fndtn-13.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/*? Ravi's Image BG  */
+/*? Header  */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 calc(1.5vw + 0.2vh);
+  /* Glass Effect */
+  background-color: rgba(0, 0, 0, 0.15); /* Transparent white */
+  backdrop-filter: blur(0.5px); /* Increased blur for smoothness */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+}
+.logo {
+  width: calc(3vw + 3vh);
+  margin: 0.2rem 0;
+}
+nav {
+  p {
+    text-shadow: 0px 0px 5px #000000;
+  }
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  /* font-family: "Belanosima", sans-serif; */
+  font-weight: 600;
+  font-size: calc(1.22vw + 1.3vh);
+  margin-left: calc(0.5vw);
+}
+.contact-a {
+  font-weight: 800;
+  color: #ffd300;
+  text-shadow: none;
+}
+
+/*? Header  */
+
+/* ? Side Videos */
+main {
+  position: relative;
+}
+
+.right-pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-pages {
+  position: absolute;
+  right: 0;
+  height: calc(25vw + 50vh - calc(3vw + 3vh + 0.65rem));
+  background-color: white;
+  border-top-left-radius: 0.8rem;
+}
+
+.right-pages video {
+  /* width: calc((25vw + 50vh - calc(3vw + 3vh + 0.65rem)) / 3);
+  height: calc((25vw + 50vh - calc(3vw + 3vh + 0.65rem)) / 3); */
+  width: 100%;
+  margin: 0;
+  border-radius: calc(0.5vh + 0.75vw);
+}
+
+.exp-vid {
+  width: calc((25vw + 50vh - calc(3vw + 3vh + 0.65rem)) / 3);
+  height: calc((25vw + 50vh - calc(3vw + 3vh + 0.65rem)) / 3);
+  padding: 1rem 1rem 0rem 1rem;
+}
+
+.about video {
+}
+
+.foundations video {
+}
+/* ? Side Videos */
+.ravi-image {
+  position: relative;
+}
+
+.ylw-stroke {
+  z-index: 1;
+  position: absolute;
+  bottom: calc(-0.65vh - 4.5vw);
+  left: -1%;
+  width: calc(105vw - ((25vw + 50vh - calc(3vw + 3vh + 0.65rem)) / 3));
+}
+.ylw-stroke img {
+  width: calc(105vw - ((25vw + 50vh - calc(3vw + 3vh + 0.65rem)) / 3));
+  height: 10%;
+}
+
+.name {
+  font-family: "Belanosima", sans-serif;
+  font-weight: 600;
+  color: #253439;
+  position: absolute;
+  font-size: calc(0.1vh + 4vw);
+  top: calc(20%);
+  left: calc(1% + 10vw);
+}
+
+/*! Ravi's Hero Section  */
