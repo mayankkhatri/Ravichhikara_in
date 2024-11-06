@@ -12,6 +12,10 @@ html {
 
 body {
   font-family: "Geist", sans-serif;
+  background-color: #faf7f0;
+}
+a {
+  text-decoration: none;
 }
 
 /*! Ravi's Hero Section  */
@@ -68,6 +72,11 @@ main {
   position: relative;
 }
 
+.hero {
+  overflow: hidden;
+  padding-bottom: 5%;
+}
+
 .right-pages {
   display: flex;
   flex-direction: column;
@@ -78,7 +87,7 @@ main {
   position: absolute;
   right: 0;
   height: calc(25vw + 50vh - calc(3vw + 3vh + 0.65rem));
-  background-color: white;
+  background-color: #faf7f0;
   border-top-left-radius: 0.8rem;
 }
 
@@ -96,11 +105,6 @@ main {
   padding: 1rem 1rem 0rem 1rem;
 }
 
-.about video {
-}
-
-.foundations video {
-}
 /* ? Side Videos */
 .ravi-image {
   position: relative;
@@ -129,3 +133,267 @@ main {
 }
 
 /*! Ravi's Hero Section  */
+
+/*! About the Firm Section   */
+/*? BLocks  */
+.about-firm {
+  margin: calc(1.3vh + 4vw) calc(2vw + 2px);
+  overflow: hidden;
+  padding-bottom: 5%;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: calc(2.3vh + 2vw);
+}
+
+.firm-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-sized columns */
+  gap: 12px; /* 10px gap between all cells */
+  height: 100%; /* Overall height of the grid */
+  width: 100%; /* Full width of the screen */
+  margin: auto;
+}
+/* .firm-card-margin {
+  margin: calc(-3vh + 25vw) 0;
+} */
+
+.left-grid,
+.right-grid {
+  display: grid;
+  height: 100%; /* Full height of the parent container */
+  gap: 10px; /* Adds 10px gap between cells in both left and right grids */
+}
+
+/* Left Grid Layout */
+.left-grid {
+  grid-template-rows: 92% 8%; /* Grid1 is slightly larger than Grid2 */
+}
+
+/* Right Grid Layout */
+.right-grid {
+  grid-template-rows: 2% 98%; /* Logo is smallest, Grid3 larger than Grid4 */
+}
+
+/* Different background colors for each grid cell */
+.firm-image {
+  box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.03),
+    -0.5px -0.5px 4px rgba(0, 0, 0, 0.03);
+}
+
+.firm-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: calc(0.3vh + 0.7vw);
+}
+
+.card-details {
+  background-color: white;
+  border-radius: calc(0.3vh + 0.7vw);
+  position: relative;
+  box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.03),
+    -0.5px -0.5px 4px rgba(0, 0, 0, 0.03);
+}
+.card-title-r::before {
+  content: "Office of Adv. Ravi Chhikara";
+  background-color: rgba(255, 255, 255, 0.96);
+  position: absolute;
+  padding: calc(0.2vh + 1vw);
+  width: 100%;
+  font-family: "Belanosima", sans-serif;
+  font-weight: 600;
+  color: #ffd300;
+  width: max-content;
+  font-size: calc(6.5vw);
+  left: calc(-2.5vh - 40vw);
+  top: 0;
+  border-radius: calc(0.3vh + 0.7vw);
+  text-align: center;
+}
+.card-title-l2::before {
+  content: "Legal Expertise You Can Trust";
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  padding: calc(0.2vh + 1vw);
+  width: 100%;
+  font-family: "Belanosima", sans-serif;
+  font-weight: 600;
+  color: #ffd300;
+  width: max-content;
+  font-size: calc(6.5vw);
+  left: 0;
+  top: 0;
+  border-radius: calc(0.3vh + 0.7vw);
+  text-align: center;
+}
+
+.ttl-three::before {
+  content: "Tailored Legal Counsel for You";
+  font-size: calc(6.35vw);
+}
+
+.ttl-four::before {
+  content: "Our Reputation for Excellence";
+}
+
+.card-details p {
+  margin-top: calc(6.5vw + 2.8vw + 0.6vh);
+  z-index: 2;
+  padding: calc(0.5vh + 0.9vw);
+  color: #aaa; /* Light starting color */
+  font-size: calc(3vw + 0.3vh);
+  font-weight: 500;
+  transition: color 0.5s ease; /* Smooth transition for color change */
+}
+
+.about-title {
+  border-radius: calc(0.3vh + 0.7vw);
+  text-align: right;
+  font-size: calc(0.5vh + 0.8vw);
+  color: #5b5b5b;
+  font-family: "Belanosima", sans-serif;
+  font-weight: 500;
+  margin: 0 5px;
+}
+
+.about-title-l {
+  text-align: left;
+}
+
+.firm-stats {
+  background-color: #ffffff;
+  border-radius: calc(0.3vh + 0.7vw);
+  box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.03),
+    -0.5px -0.5px 4px rgba(0, 0, 0, 0.03);
+}
+
+.firm-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 5px;
+  font-family: "Belanosima", sans-serif;
+}
+
+.smile {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.seperator {
+  height: 70%;
+  width: 1px;
+  background-color: rgba(41, 41, 41, 0.2);
+}
+
+.smile p,
+.time p {
+  font-size: calc(0.5vh + 1.9vw);
+  color: #4a4a4a;
+}
+
+.big-stat {
+  font-size: calc(0.4vh + 2.8vw);
+  color: #4a4a4a;
+  text-wrap: nowrap;
+  text-align: center;
+  font-weight: 500;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.firm-stats video {
+  width: calc(1vh + 5vw);
+}
+
+/*? BLocks  */
+/*! About the Firm Section   */
+/*! About Me Section  */
+
+.about-me {
+  padding: calc(0.1vh + 1vw) calc(1vh + 1.4vw);
+  background-color: #253439;
+  position: relative;
+}
+
+.about-me::before {
+  content: "About Me";
+  position: absolute;
+  color: #e0e0e0;
+  font-family: "Belanosima", sans-serif;
+  top: 1%;
+  left: 8%;
+  font-size: calc(1vh + 2vw);
+}
+
+.tear {
+  position: absolute;
+  z-index: -2;
+  /* background-color: rebeccapurple; */
+}
+
+.tear img {
+  width: 110vw;
+}
+
+.tear-top {
+  top: -4%;
+  left: -15%;
+  transform: rotate(-2deg);
+}
+
+.tear-bottom {
+  bottom: -4%;
+  left: -15%;
+  transform: rotate(5deg);
+}
+
+.about-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: calc(2vh + 4vw) 0;
+}
+
+.about-card img {
+  width: calc(20vw + 12vh);
+  margin: 0 1rem;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.about-card p {
+  font-size: calc(0.2vh + 1.8vw);
+  font-weight: 450;
+  color: white;
+  line-height: 1.6;
+}
+
+.about-info {
+  color: white;
+}
+.about-info h1 {
+  font-family: "Belanosima", sans-serif;
+  font-weight: 600;
+  font-size: calc(0.2vh + 5vw);
+  text-decoration: underline 1.5px solid #ffd300;
+}
+.about-info span {
+  font-size: calc(0.2vh + 2vw);
+  display: block;
+  margin: calc(0.5vh + 1.2vw) 0 calc(0.7vh + 2vw) 0;
+}
+.about-info p {
+}
+
+/*! About Me Section  */
