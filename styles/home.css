@@ -13,6 +13,7 @@ html {
 body {
   font-family: "Geist", sans-serif;
   background-color: #faf7f0;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -37,11 +38,33 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 calc(1.5vw + 0.2vh);
-  /* Glass Effect */
-  background-color: rgba(0, 0, 0, 0.15); /* Transparent white */
-  backdrop-filter: blur(0.5px); /* Increased blur for smoothness */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+  background-color: rgba(0, 0, 0, 0.15); /* Transparent background */
+  backdrop-filter: blur(0.5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100vw;
+  transition: background-color 0.3s ease; /* Smooth transition */
+  z-index: 6;
 }
+
+/* New class for white background */
+header.scrolled {
+  background-color: white; /* Changes background color to white */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adjust shadow for visibility */
+}
+
+header nav a {
+  color: white; /* Default color for navigation text */
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+header.scrolled nav a {
+  color: #606060; /* Changes nav text color to black when scrolled */
+}
+header.scrolled nav a:nth-child(3) {
+  color: white; /* Changes nav text color to black when scrolled */
+}
+
 .logo {
   width: calc(3vw + 3vh);
   margin: 0.2rem 0;
@@ -56,13 +79,16 @@ nav a {
   text-decoration: none;
   /* font-family: "Belanosima", sans-serif; */
   font-weight: 600;
-  font-size: calc(1.22vw + 1.3vh);
-  margin-left: calc(0.5vw);
+  font-size: calc(1.22vw + 1.25vh);
+  margin-left: calc(0.75vw + 0.6vh);
 }
 .contact-a {
   font-weight: 800;
-  color: #ffd300;
+  color: white;
   text-shadow: none;
+  background-color: #ffd300;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5rem;
 }
 
 /*? Header  */
@@ -85,6 +111,7 @@ main {
 
 .right-pages {
   position: absolute;
+  top: 12%;
   right: 0;
   height: calc(25vw + 50vh - calc(3vw + 3vh + 0.65rem));
   background-color: #faf7f0;
@@ -177,6 +204,10 @@ main {
 .right-grid {
   grid-template-rows: 2% 98%; /* Logo is smallest, Grid3 larger than Grid4 */
 }
+
+/*? Animations grid  */
+
+/*? Animations grid  */
 
 /* Different background colors for each grid cell */
 .firm-image {
@@ -325,20 +356,9 @@ main {
   position: relative;
 }
 
-.about-me::before {
-  content: "About Me";
-  position: absolute;
-  color: #e0e0e0;
-  font-family: "Belanosima", sans-serif;
-  top: 1%;
-  left: 8%;
-  font-size: calc(1vh + 2vw);
-}
-
 .tear {
   position: absolute;
   z-index: -2;
-  /* background-color: rebeccapurple; */
 }
 
 .tear img {
@@ -354,7 +374,7 @@ main {
 .tear-bottom {
   bottom: -4%;
   left: -15%;
-  transform: rotate(5deg);
+  transform: rotate(4deg);
 }
 
 .about-card {

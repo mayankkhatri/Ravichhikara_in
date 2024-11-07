@@ -13,25 +13,22 @@
       <!--! Hero Section -->
       <section class="hero">
         <div class="ravi-image">
-          <div class="overflow">
-            <div class="ylw-stroke">
-              <img src="https://i.postimg.cc/vmPyCBZP/Frame-4.png" alt="" />
-              <h1 class="name">Adv. Ravi Singh Chhikara</h1>
-            </div>
-          </div>
-          <header>
-            <a href="index.html"
-              ><img
+          <div class="overflow"></div>
+          <header id="mainHeader">
+            <a href="index.html">
+              <img
                 class="logo"
                 src="https://i.postimg.cc/4x5bBMgs/Ravi-logo-circle.png"
                 alt="Advocate Ravi Singh Chhikara's Firm Logo"
-            /></a>
+              />
+            </a>
             <nav>
               <a href="">Services</a>
               <a href="">About</a>
               <a class="contact-a" href="">Contact</a>
             </nav>
           </header>
+
           <div class="right-pages">
             <div class="blog exp-vid">
               <video autoplay muted loop playsinline>
@@ -61,6 +58,10 @@
               </video>
             </div>
           </div>
+          <div class="ylw-stroke slide-in-left-name">
+            <img src="https://i.postimg.cc/vmPyCBZP/Frame-4.png" alt="" />
+            <h1 class="name">Adv. Ravi Singh Chhikara</h1>
+          </div>
         </div>
       </section>
       <!--! Hero Section -->
@@ -69,7 +70,7 @@
         <div class="card-container">
           <div class="card-wrap l-card">
             <div class="firm-card">
-              <div class="left-grid">
+              <div class="left-grid slide-in-left">
                 <div class="firm-image">
                   <img
                     src="https://i.postimg.cc/Znz6d7WQ/image-33.png"
@@ -102,7 +103,7 @@
                   </div>
                 </div>
               </div>
-              <div class="right-grid">
+              <div class="right-grid slide-in-right">
                 <div class="about-title">About the Firm</div>
                 <div class="card-details card-title-r">
                   <p class="text-reveal">
@@ -124,7 +125,7 @@
           <!--? Second Card -->
           <div class="card-wrap r-card">
             <div class="firm-card firm-card-margin">
-              <div class="right-grid">
+              <div class="right-grid slide-in-left">
                 <div class="about-title about-title-l">About the Firm</div>
                 <div class="card-details card-title-l2">
                   <p class="text-reveal">
@@ -140,7 +141,7 @@
                   </p>
                 </div>
               </div>
-              <div class="left-grid">
+              <div class="left-grid slide-in-right" style="z-index: -2">
                 <div class="firm-image">
                   <img
                     loading="lazy"
@@ -168,7 +169,7 @@
           <!--? Third Card -->
           <div class="card-wrap l-card">
             <div class="firm-card">
-              <div class="left-grid">
+              <div class="left-grid slide-in-left">
                 <div class="firm-image">
                   <img
                     src="https://i.postimg.cc/K868KLXy/image2.webp"
@@ -190,7 +191,7 @@
                   <p class="big-stat">95% Case Success Rate</p>
                 </div>
               </div>
-              <div class="right-grid">
+              <div class="right-grid slide-in-right">
                 <div class="about-title">About the Firm</div>
                 <div class="card-details card-title-r ttl-three">
                   <p class="text-reveal">
@@ -212,7 +213,7 @@
           <!-- ?4th Card -->
           <div class="card-wrap r-card">
             <div class="firm-card firm-card-margin">
-              <div class="right-grid">
+              <div class="right-grid slide-in-left">
                 <div class="about-title about-title-l">About the Firm</div>
                 <div class="card-details card-title-l2 ttl-four">
                   <p class="text-reveal">
@@ -228,7 +229,7 @@
                   </p>
                 </div>
               </div>
-              <div class="left-grid">
+              <div class="left-grid slide-in-right" style="z-index: -2">
                 <div class="firm-image">
                   <img
                     loading="lazy"
@@ -264,7 +265,7 @@
             alt="Graphical Illustration of a paper"
           />
         </div>
-        <div class="about-card">
+        <div class="about-card slide-in-right">
           <img
             src="https://i.postimg.cc/j5yhh9HZ/Group-8.webp"
             alt="About Me"
@@ -287,7 +288,7 @@
           </div>
         </div>
 
-        <div class="about-card">
+        <div class="about-card slide-in-left">
           <p>
             Throughout my career, I have successfully represented clients before
             the Hon’ble Supreme Court, the Delhi High Court, and various
@@ -322,6 +323,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/SplitText.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- todo Imports -->
     <!-- ? My scripts -->
     <script src="scripts/scroll-reveal.js"></script>

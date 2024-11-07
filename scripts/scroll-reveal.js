@@ -47,11 +47,47 @@ paragraphs.forEach((paragraph) => {
     gsap.to(line, {
       scrollTrigger: {
         trigger: line,
-        start: "top 90%",
-        end: "top 50%",
+        start: "top 70%",
+        end: "top 60%",
         scrub: true,
       },
       color: "#253439", // Target color
     });
+  });
+});
+
+// ! Header color change if scrolled
+window.addEventListener("scroll", function () {
+  const header = document.getElementById("mainHeader");
+  if (window.scrollY > 0) {
+    header.classList.add("scrolled"); // Add the class on scroll
+  } else {
+    header.classList.remove("scrolled"); // Remove the class if back to top
+  }
+});
+
+// About card reveal
+document.addEventListener("DOMContentLoaded", function () {
+  ScrollReveal().reveal(".slide-in-left", {
+    origin: "left",
+    distance: "100px",
+    duration: 1000,
+    easing: "ease-in-out",
+    opacity: 0,
+  });
+
+  ScrollReveal().reveal(".slide-in-right", {
+    origin: "right",
+    distance: "100px",
+    duration: 1000,
+    easing: "ease-in-out",
+    opacity: 0,
+  });
+  ScrollReveal().reveal(".slide-in-left-name", {
+    origin: "left",
+    distance: "50px",
+    duration: 800,
+    easing: "ease-out",
+    opacity: 0,
   });
 });
