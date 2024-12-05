@@ -7,8 +7,39 @@
     <title>Advocate Ravi Singh Chhikara</title>
     <link rel="stylesheet" href="styles/home.css" />
     <link rel="stylesheet" href="styles/home-desktop.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!--! Disclaimer -->
+    <div id="disclaimer-modal">
+      <div class="disclaimer-card">
+        <h2>Disclaimer</h2>
+        <p>
+          The Bar Council of India does not permit advertisement or solicitation
+          by advocates in any form or manner. By accessing this website,
+          www.ravichhikara.in, you acknowledge and confirm that you are seeking
+          information relating to Ravi Chhikara and Associates of your own
+          accord and that there has been no form of solicitation, advertisement,
+          or inducement by Ravi Chhikara and Associates or its members. The
+          content of this website is for informational purposes only and should
+          not be interpreted as soliciting or advertisement. No
+          material/information provided on this website should be construed as
+          legal advice. Ravi Chhikara and Associates shall not be liable for
+          consequences of any action taken by relying on the
+          material/information provided on this website. The contents of this
+          website are the intellectual property of Ravi Chhikara and Associates.
+        </p>
+        <button class="agree-button" id="agree-button">I Agree</button>
+      </div>
+    </div>
+    <!--! Disclaimer  -->
     <main>
       <!--! Hero Section -->
       <section class="hero">
@@ -23,14 +54,19 @@
               />
             </a>
             <nav>
-              <a href="">Services</a>
-              <a href="">About</a>
-              <a class="contact-a" href="">Contact</a>
+              <i class="ri-menu-line" id="menu-icon"></i>
+              <div class="menu" id="hamburger-menu">
+                <a href="#about-me">About Me</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <a href="#blog">Blog</a>
+                <a href="#foundations">Foundations</a>
+              </div>
             </nav>
           </header>
 
           <div class="right-pages">
-            <div class="blog exp-vid">
+            <div class="blog-vid exp-vid">
               <video autoplay muted loop playsinline>
                 <source
                   src="https://github.com/mayankkhatri/site-assets/raw/refs/heads/main/About%20Me%20(2).mp4"
@@ -261,7 +297,7 @@
       <section class="about-me">
         <div class="tear tear-top">
           <img
-            src="https://i.postimg.cc/tgnWLqnd/Vector-s.png"
+            src="https://i.postimg.cc/GhFTCMXv/Vector-1-1.png"
             alt="Graphical Illustration of a paper"
           />
         </div>
@@ -289,21 +325,27 @@
         </div>
 
         <div class="about-card slide-in-left">
-          <p>
-            Throughout my career, I have successfully represented clients before
-            the Hon’ble Supreme Court, the Delhi High Court, and various
-            tribunals across Delhi, Haryana, and Punjab. My commitment to
-            ensuring justice for all drives my work, and I take pride in
-            advocating for my clients' rights and interests with diligence and
-            integrity.
-            <br />
-            <br />
-            Beyond my legal practice, I am passionate about raising awareness on
-            critical issues, particularly in the realm of animal rights. I
-            believe in using my platform to advocate for those who cannot speak
-            for themselves. Whether in the courtroom or through my written work,
-            I strive to make a positive impact on society.
-          </p>
+          <div class="about-second">
+            <p>
+              Throughout my career, I have successfully represented clients
+              before the Hon’ble Supreme Court, the Delhi High Court, and
+              various tribunals across Delhi, Haryana, and Punjab. My commitment
+              to ensuring justice for all drives my work, and I take pride in
+              advocating for my clients' rights and interests with diligence and
+              integrity.
+            </p>
+            <div class="stats-illus-vid">
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                loading="lazy"
+                src="https://github.com/mayankkhatri/site-assets/raw/refs/heads/main/ravi-cards/5+%20Years%20Experience%20in%20(2).mp4"
+                type="video/mp4"
+              ></video>
+            </div>
+          </div>
           <img
             src="https://i.postimg.cc/Rh9LpRG9/Group-9.webp"
             alt="About Me"
@@ -311,12 +353,621 @@
         </div>
         <div class="tear tear-bottom">
           <img
-            src="https://i.postimg.cc/tgnWLqnd/Vector-s.png"
+            src="https://i.postimg.cc/GhFTCMXv/Vector-1-1.png"
             alt="Graphical Illustration of a paper"
           />
         </div>
       </section>
       <!-- ! About Me Section  -->
+      <!--!Whatsapp Chat Section  -->
+      <div class="chat-box">
+        <div class="chat-head">
+          <div class="wp-dp">
+            <img
+              loading="lazy"
+              src="https://i.postimg.cc/FRF0MFsw/Whats-App-Image-2024-11-19-at-23-49-22-e5118600-1.png"
+              alt="Adv. Ravi Chhikara's Closeup Shot"
+            />
+          </div>
+          <div class="wp-name">
+            <p>Adv. Ravi Chhikara</p>
+            <span>Typically replies within a day</span>
+          </div>
+          <div class="call-icons">
+            <img
+              src="https://i.postimg.cc/NGSdZnZb/Call-Icons-1.png"
+              alt="call icons"
+            />
+          </div>
+        </div>
+        <div class="chat-body">
+          <div class="ravi-message slide-message">
+            <p>
+              Hi there 👋🏻 <br /><br />
+              How can I help you?
+            </p>
+            <span>1 min ago</span>
+          </div>
+          <div class="chat-suggestions">
+            <div class="sgstn">
+              <a
+                class="suggest-link"
+                href="https://api.whatsapp.com/send?phone=917042131601&text=I%20need%20help%20with%20my%20case!"
+              >
+                <p>I need help with my case!</p>
+                <img
+                  src="https://i.postimg.cc/vHkPnKGC/send-btm-1.png"
+                  alt="send button"
+                />
+              </a>
+            </div>
+            <br />
+            <div class="sgstn">
+              <a
+                class="suggest-link"
+                href="https://api.whatsapp.com/send?phone=917042131601&text=Can%20I%20book%20an%20appointment?"
+              >
+                <p>Can I book an appointment?</p>
+                <img
+                  src="https://i.postimg.cc/vHkPnKGC/send-btm-1.png"
+                  alt="send button"
+                />
+              </a>
+            </div>
+            <br />
+            <div class="sgstn">
+              <a
+                class="suggest-link"
+                href="https://api.whatsapp.com/send?phone=917042131601&text=Can%20I%20get%20some%20legal%20guidance?"
+              >
+                <p>Can I get some legal guidance?</p>
+                <img
+                  src="https://i.postimg.cc/vHkPnKGC/send-btm-1.png"
+                  alt="send button"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="custom-chat">
+            <div class="type-chat">
+              <img
+                src="https://i.postimg.cc/mg35GwGq/image-12-7-1.png"
+                alt="smile icon"
+              />
+              <input
+                type="text"
+                id="message-input"
+                placeholder="Type a message"
+              />
+              <img
+                src="https://i.postimg.cc/pdqcmLrJ/attachment-2-1.png"
+                alt="clip icon"
+              />
+            </div>
+            <img
+              id="send-button"
+              class="wp-send-btn"
+              src="https://i.postimg.cc/vHkPnKGC/send-btm-1.png"
+              alt="send button"
+            />
+          </div>
+        </div>
+      </div>
+      <!--!Whatsapp Chat Section  -->
+      <!--! How we work section   -->
+      <section class="work">
+        <div class="how-we-work">
+          <h1>How We Work?</h1>
+
+          <div class="step fade-section">
+            <img
+              loading="lazy"
+              src="https://i.postimg.cc/3J8C4xHZ/Untitled-design-11-1.png"
+              alt="Initial Consultation"
+            />
+            <h2>Understanding Your Needs</h2>
+            <p>
+              We start with a free consultation to understand your unique
+              situation, address your concerns, and explain how we can assist
+              you.
+            </p>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="step fade-section">
+            <img
+              loading="lazy"
+              src="https://i.postimg.cc/6qYZLCNf/Untitled-design-14-1.png"
+              alt="Strategic Planning"
+            />
+            <h2>Strategic Planning</h2>
+            <p>
+              We develop a tailored legal strategy based on the specifics of
+              your case and your desired outcomes.
+            </p>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="step fade-section">
+            <img
+              loading="lazy"
+              src="https://i.postimg.cc/nrRsQZvd/Untitled-design-12-1.png"
+              alt="Research and Preparation"
+            />
+            <h2>Research and Preparation</h2>
+            <p>
+              Our team conducts thorough research and prepares all necessary
+              documents and evidence to build a strong case.
+            </p>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="step fade-section">
+            <img
+              loading="lazy"
+              src="https://i.postimg.cc/HnhxkzgR/Untitled-design-15-1.png"
+              alt="Representation"
+            />
+            <h2>Expert Representation</h2>
+            <p>
+              We represent you in court or negotiations, advocating for your
+              best interests every step of the way.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--! How we work section   -->
+      <!--! Featured In  -->
+      <!--? Featured in   -->
+      <div class="featured">
+        <span>Featured in</span>
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <img src="https://i.postimg.cc/vmgsKz7n/dh.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/jjpbY7vF/lliv.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/rsJX4YTB/nc.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/PxSQ8mc6/tl-1.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/3R2H8xcJ/toi.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/gjdbnbCy/tq.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/vmgsKz7n/dh.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/jjpbY7vF/lliv.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/rsJX4YTB/nc.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/PxSQ8mc6/tl-1.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/3R2H8xcJ/toi.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/gjdbnbCy/tq.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/vmgsKz7n/dh.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/jjpbY7vF/lliv.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/rsJX4YTB/nc.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/PxSQ8mc6/tl-1.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/3R2H8xcJ/toi.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/gjdbnbCy/tq.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/vmgsKz7n/dh.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/jjpbY7vF/lliv.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/rsJX4YTB/nc.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/PxSQ8mc6/tl-1.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/3R2H8xcJ/toi.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="https://i.postimg.cc/gjdbnbCy/tq.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--? Featured in   -->
+      <!--! Featured In  -->
+      <!-- !Services offered -->
+      <section class="services-offered">
+        <div class="centre-title practice-area">
+          <img
+            class="practice-img"
+            src="https://i.postimg.cc/ZKB4JRxr/i-4-1-1.png"
+            alt="balance"
+          />
+          <h4>Practice Areas</h4>
+        </div>
+        <!-- Type tiles -->
+        <div class="type-service">
+          <span>Litigation Services</span>
+          <div class="type-line"></div>
+        </div>
+        <!-- tiles -->
+        <div class="service-tiles">
+          <!-- Tile 1 -->
+          <div class="service-tile">
+            <a href="service/civilcases.html">
+              <img
+                src="https://info.stonewallco.com/hs-fs/hubfs/Construction%20civil%20engineer%20technician%20and%20architect%20working.png?width=940&height=470&name=Construction%20civil%20engineer%20technician%20and%20architect%20working.png"
+                alt="Civil Law"
+                class="service-image"
+              />
+              <p class="service-name">
+                Civil Law<i class="ri-arrow-right-circle-line"></i>
+              </p>
+            </a>
+          </div>
+          <!-- Tile 2 -->
+          <div class="service-tile">
+            <a href="service/criminalcases.html">
+              <img
+                src="https://www.barwoncommunitylegal.org.au/wp-content/uploads/2021/04/criminal-offences.jpeg"
+                alt="Criminal Law"
+                class="service-image"
+              />
+              <p class="service-name">
+                Criminal Law<i class="ri-arrow-right-circle-line"></i>
+              </p>
+            </a>
+          </div>
+          <!-- Tile 3 -->
+          <div class="service-tile">
+            <a href="service/divorcecases.html">
+              <img
+                src="https://hellodivorce.com/hubfs/Used%20Blog%20Images/women-taking-off-ring.jpg"
+                alt="Family/Divorce Law"
+                class="service-image"
+              />
+              <p class="service-name">
+                Family/Divorce Law<i class="ri-arrow-right-circle-line"></i>
+              </p>
+            </a>
+          </div>
+          <!-- Tile 4 -->
+          <div class="service-tile">
+            <a href="service/alternatedisputeresolution.html">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC3LLlRarD2nk8GtL27ftcVSmyZ03JHUTK8Q&s"
+                alt="Alternate Dispute Resolution (ADR)"
+                class="service-image"
+              />
+              <p class="service-name">
+                Alternate Dispute Resolution (ADR)<i
+                  class="ri-arrow-right-circle-line"
+                ></i>
+              </p>
+            </a>
+          </div>
+          <!-- Tile 5 -->
+          <div class="service-tile">
+            <a href="service/debtrecovery.html">
+              <img
+                src="https://www.livemint.com/lm-img/img/2024/04/10/600x338/Venture-debt-is-offered-to-startups--which-are-bac_1676625036666_1712745298898.jpg"
+                alt="Debt Recovery Tribunal (DRT) Litigation"
+                class="service-image"
+              />
+              <p class="service-name">
+                Debt Recovery Tribunal (DRT) Litigation<i
+                  class="ri-arrow-right-circle-line"
+                ></i>
+              </p>
+            </a>
+          </div>
+          <!-- Tile 6 -->
+          <div class="service-tile">
+            <a href="service/negotiableinstrumentlaw.html">
+              <img
+                src="https://cdn.taxguru.in/wp-content/uploads/2020/05/Check.jpg"
+                alt="Negotiable Instrument Law"
+                class="service-image"
+              />
+              <p class="service-name">
+                Negotiable Instrument Law<i
+                  class="ri-arrow-right-circle-line"
+                ></i>
+              </p>
+            </a>
+          </div>
+          <!-- Tile 7 -->
+          <div class="service-tile">
+            <a href="service/intelectualpropertyrights.html">
+              <img
+                src="https://media.bizj.us/view/img/11539133/gettyimages-1142720955*1200xx1407-1414-81-0.jpg"
+                alt="Intellectual Property Rights (IPR)"
+                class="service-image"
+              />
+              <p class="service-name">
+                Intellectual Property Rights (IPR)<i
+                  class="ri-arrow-right-circle-line"
+                ></i>
+              </p>
+            </a>
+          </div>
+          <!-- Tile 8 -->
+          <div class="service-tile">
+            <a href="service/corporatelaw.html">
+              <img
+                src="https://cdn.corporatefinanceinstitute.com/assets/professional-corporation.jpeg"
+                alt="Corporate/Company Law"
+                class="service-image"
+              />
+              <p class="service-name">
+                Corporate/Company Law<i class="ri-arrow-right-circle-line"></i>
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- !Services offered -->
+      <!--!Blog  -->
+
+      <section class="blog">
+        <div class="blog-head">
+          <img
+            loading="lazy"
+            src="https://i.postimg.cc/9M7cQ2Hc/client-1-1-1-1.png"
+            alt="blog icon"
+          />
+          <h2>Blog</h2>
+        </div>
+        <div
+          class="carousel-blog"
+          data-flickity='{ "wrapAround": true, "pageDots": false }'
+        >
+          <!-- Carousel cells -->
+          <div
+            class="carousel-cell-blog"
+            data-link="https://khatrie.notion.site/How-we-Handle-Corporate-Cases-ce1847912c5940fcb0621107d4bb0a0e"
+          >
+            <img
+              loading="lazy"
+              class="blog-pic"
+              src="https://i.postimg.cc/3rFzW8VK/i-3.jpg"
+              alt="Attorney Photo"
+            />
+            <h3>How we handle corporate cases?</h3>
+          </div>
+          <div
+            class="carousel-cell-blog"
+            data-link="https://khatrie.notion.site/What-are-the-taxation-laws-in-India-05409e8c207444ff9e1b70587611b3b6"
+          >
+            <img
+              loading="lazy"
+              class="blog-pic"
+              src="https://i.postimg.cc/pdMBD853/i-4.jpg"
+              alt="Attorney Photo"
+            />
+            <h3>What are the taxation laws in India?</h3>
+          </div>
+          <div
+            class="carousel-cell-blog"
+            data-link="https://khatrie.notion.site/The-Boom-of-Banking-Sector-in-India-eae7e28e5aa14611b0a49f8e3ca7b730?pvs=25"
+          >
+            <img
+              loading="lazy"
+              class="blog-pic"
+              src="https://i.postimg.cc/GmyR5076/i.jpg"
+              alt="Attorney Photo"
+            />
+            <h3>The Boom of Banking Sector in India?</h3>
+          </div>
+          <div
+            class="carousel-cell-blog"
+            data-link="https://khatrie.notion.site/How-to-legally-navigate-cyber-crime-8294955c3fff4231ac94804c1ed502ff?pvs=25"
+          >
+            <img
+              loading="lazy"
+              class="blog-pic"
+              src="https://i.postimg.cc/76F7kr1d/i-6.jpg"
+              alt="Attorney Photo"
+            />
+            <h3>How to legally navigate cyber crime?</h3>
+          </div>
+          <div
+            class="carousel-cell-blog"
+            data-link="https://khatrie.notion.site/Legal-actions-for-cheque-bounce-7f2d3f865a4d49eeaff25837560b58a5?pvs=25"
+          >
+            <img
+              loading="lazy"
+              class="blog-pic"
+              src="https://i.postimg.cc/5ywWyfwz/Untitled-design-1.jpg"
+              alt="Attorney Photo"
+            />
+            <h3>Legal actions for cheque bounce?</h3>
+          </div>
+        </div>
+      </section>
+      <!--!Blog  -->
+      <!--!Testimonials  -->
+      <section id="testimonials">
+        <h2 class="center-txt-t">What Clients say about us?</h2>
+
+        <div class="reviews-section">
+          <div class="review-heading">
+            <h2>Our Google Reviews</h2>
+            <a
+              href="https://g.co/kgs/VnnVQeJ"
+              class="write-review-btn"
+              target="_blank"
+              >Write a review</a
+            >
+          </div>
+          <p class="rev-sum">⭐⭐⭐⭐⭐ 5.0 rating of 56 reviews</p>
+
+          <div
+            class="main-carousel"
+            data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "wrapAround": true }'
+          >
+            <div class="review-card" data-url="https://g.co/kgs/VnnVQeJ">
+              <img
+                class="google-icon"
+                src="https://i.postimg.cc/jS98NWTf/google-icon-2048x2048-pks9lbdv-11zon-1.png"
+                alt="google-icon"
+              />
+              <img
+                src="https://lh3.googleusercontent.com/a-/ALV-UjWHL4jdWCCXdpVFY5jQ8jNI4hPmOWrEyivWXxwoH8IcWZNoAA1LyQ=w41-h41-p-rp-mo-br100"
+                alt="Sarode Mayank"
+                width="50"
+              />
+              <h3>SARODE MAYAN</h3>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p>
+                Best supportive advocate I have ever seen. Fully committed and
+                dedicated to her work. Best family lawyer in Ahmedabad. Advice
+                and guidance is outstanding. And most importantly there is no
+                consultation charge.
+              </p>
+            </div>
+            <div class="review-card" data-url="https://g.co/kgs/VnnVQeJ">
+              <img
+                class="google-icon"
+                src="https://i.postimg.cc/jS98NWTf/google-icon-2048x2048-pks9lbdv-11zon-1.png"
+                alt="google-icon"
+              />
+              <img
+                src="https://lh3.googleusercontent.com/a-/ALV-UjW0qlVGqYVVgE4ju-djmvoPRkB2lD8NeEEh0ropoWKmo_fMqU0=w41-h41-p-rp-mo-br100"
+                alt="Ashish Dabhi"
+                width="50"
+              />
+              <h3>Ashish Dabhi</h3>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p>
+                Advocate Ravi is your go-to expert! With a stellar track record,
+                she offers unmatched expertise and dedication. From civil to
+                criminal cases, trust Ravi for effective legal solutions and a
+                passion for justice.
+              </p>
+            </div>
+            <div class="review-card" data-url="https://g.co/kgs/VnnVQeJ">
+              <img
+                class="google-icon"
+                src="https://i.postimg.cc/jS98NWTf/google-icon-2048x2048-pks9lbdv-11zon-1.png"
+                alt="google-icon"
+              />
+              <img
+                src="https://lh3.googleusercontent.com/a-/ALV-UjXszPfXFKngub_FlHRqCoclQi8PPwWAhOoQ3_uNzUt6FmL6oz5zyg=w41-h41-p-rp-mo-br100"
+                alt="D.G. Goswami"
+                width="50"
+              />
+              <h3>D.G. Goswami</h3>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p>
+                I approached Ravi for one of my organisation dispute for
+                cheating and fraud. The dispute is of cheque bounce 138 and
+                amount involved is of Rs. 9,00,000/- and she settled the matter
+                by getting award in my favour with full amount with interest.
+              </p>
+            </div>
+            <div class="review-card" data-url="https://g.co/kgs/VnnVQeJ">
+              <img
+                class="google-icon"
+                src="https://i.postimg.cc/jS98NWTf/google-icon-2048x2048-pks9lbdv-11zon-1.png"
+                alt="google-icon"
+              />
+              <img
+                src="https://lh3.googleusercontent.com/a-/ALV-UjVdHvC9dGVxB60a9nobxgsjY3KvPPzlllP-ac63ZqaHYsBbiZA4=w41-h41-p-rp-mo-br100"
+                alt="Saurabh Kaushik"
+                width="50"
+              />
+              <h3>Saurabh Kaushik</h3>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p>
+                Very Helpful and Always Ready to Help . Very technical with her
+                work and do much research. Definitely one of the best lawyer
+              </p>
+            </div>
+            <div class="review-card" data-url="https://g.co/kgs/VnnVQeJ">
+              <img
+                class="google-icon"
+                src="https://i.postimg.cc/jS98NWTf/google-icon-2048x2048-pks9lbdv-11zon-1.png"
+                alt="google-icon"
+              />
+              <img
+                src="https://lh3.googleusercontent.com/a-/ALV-UjVr7i_MDXC-83chy_72Q-JIL6Yx1UpfhDwvUvdLqw3y6p_8szA=w41-h41-p-rp-mo-br100"
+                alt="Daphne Fernandes"
+                width="50"
+              />
+              <h3>Daphne Fernandes</h3>
+              <p>⭐⭐⭐⭐⭐</p>
+              <p>
+                A very knowledgeable and helpful lawyer. Knows how to present
+                her case well. Highly recommend her.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--!Testimonials  -->
+      <!--!Contact Me  -->
+      <section class="contact-me">
+        <div class="contact-name">
+          <img
+            src="https://i.postimg.cc/NGrfD1V5/client-3-1-1.png"
+            alt="Contact icon"
+          />
+          <h2>Contact me</h2>
+        </div>
+        <div class="contact-details">
+          <div class="left-details">
+            <p class="mail-contact">adv.ravisinghchhikara-<br />@gmail.com</p>
+            <p>+91 70421 31601</p>
+            <div class="social-links">
+              <a href="">Instagram</a>
+              <a href="">LinkedIn</a>
+            </div>
+            <span>Mon - Fri (9AM - 5PM)</span>
+          </div>
+          <div class="right-map">
+            <div class="map-embed">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13998.443927710712!2d77.2070463!3d28.7012814!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfddce9725bdd%3A0x1f6666aff9eee444!2sAdv.Ravi%20Singh%20Chhikara!5e0!3m2!1sen!2sin!4v1733405468163!5m2!1sen!2sin"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <p>Outram Ln, Outram Lines, GTB Nagar, New Delhi, Delhi, 110009</p>
+          </div>
+        </div>
+      </section>
+      <!--!Contact Me  -->
     </main>
 
     <!-- todo Imports -->
@@ -324,9 +975,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/SplitText.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
     <!-- todo Imports -->
     <!-- ? My scripts -->
     <script src="scripts/scroll-reveal.js"></script>
+    <script src="scripts/home-logic.js"></script>
     <!-- ? My scripts -->
   </body>
 </html>

@@ -83,6 +83,15 @@ document.addEventListener("DOMContentLoaded", function () {
     easing: "ease-in-out",
     opacity: 0,
   });
+  ScrollReveal().reveal(".slide-message", {
+    origin: "right", // Message slides in from the right
+    distance: "50px", // Distance of the slide animation
+    duration: 500, // Animation duration in milliseconds
+    easing: "ease-in-out", // Smooth animation
+    opacity: 0, // Start with opacity 0
+    reset: false, // Ensures the animation runs only once
+  });
+
   ScrollReveal().reveal(".slide-in-left-name", {
     origin: "left",
     distance: "50px",
@@ -90,4 +99,27 @@ document.addEventListener("DOMContentLoaded", function () {
     easing: "ease-out",
     opacity: 0,
   });
+});
+
+// reviews
+document.addEventListener("DOMContentLoaded", function () {
+  ScrollReveal().reveal(".fade-section", {
+    duration: 900,
+    distance: "50px",
+    easing: "ease-in-out",
+    origin: "bottom",
+    opacity: 0,
+    scale: 0.85,
+    reset: true, // Animation can happen each time an element comes into view
+  });
+});
+
+document.querySelectorAll(".review-card").forEach((card) => {
+  card.addEventListener("click", () => {
+    window.open(card.getAttribute("data-url"), "_blank");
+  });
+});
+
+document.querySelector(".write-review-btn").addEventListener("click", () => {
+  window.open("https://g.co/kgs/VnnVQeJ", "_blank");
 });

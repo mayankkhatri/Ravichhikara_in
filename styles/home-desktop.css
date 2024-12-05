@@ -5,4 +5,7 @@
     top: calc(25%);
     left: calc(1% + 12vw);
   }
+  .chat-box {
+    margin: 5rem 2.5vw;
+  }
 }
