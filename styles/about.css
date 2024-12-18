@@ -28,14 +28,14 @@ body {
 }
 
 .logo img {
-  height: 50px;
+  height: 45px;
   border-radius: 50%;
 }
 
 .nav {
   display: flex;
   gap: 10px;
-  margin-top: 1rem;
+  margin-top: 1.35rem;
 }
 
 .nav a {
@@ -181,9 +181,6 @@ body {
 
 /*!Blog Post's  */
 
-.publications {
-}
-
 .posts {
   display: flex;
   flex-direction: column;
@@ -195,7 +192,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 1rem;
+  margin: 0.35rem 1rem;
   gap: 1rem;
 }
 
@@ -216,12 +213,13 @@ body {
 }
 
 .heading {
-  font-size: calc(0.85vh + 0.87vw);
+  font-size: calc(0.95vh + 0.87vw);
   color: #2a2a2a;
+  margin-bottom: 0.25rem;
 }
 
 .post-body {
-  font-size: calc(0.55vh + 0.76vw);
+  font-size: calc(0.65vh + 0.76vw);
   color: #6d6d6d;
 }
 
@@ -242,6 +240,7 @@ body {
 
 /*! Service Offered  */
 .centre-title {
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
