@@ -137,7 +137,6 @@ body {
 }
 .tags {
   margin: 0.5rem auto;
-  text-align: center;
 }
 
 .tags span {
@@ -149,6 +148,7 @@ body {
   display: inline-block;
   margin: calc(0.3vh + 0.7vw);
   margin-left: 0;
+  text-align: center;
 }
 .flex-b {
   display: flex;
