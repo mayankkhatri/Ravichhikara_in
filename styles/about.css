@@ -199,7 +199,7 @@ body {
 
 .left-thumb img {
   width: calc(25vw);
-  height: calc(19vw);
+  height: calc(22vw);
   object-fit: cover;
   border-radius: 0.4rem;
   box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.03),
