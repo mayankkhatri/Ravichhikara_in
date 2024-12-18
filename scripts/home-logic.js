@@ -15,16 +15,6 @@ document.getElementById("send-button").addEventListener("click", function () {
   window.location.href = whatsappURL;
 });
 
-// Header menu
-// JavaScript for menu toggle functionality
-const menuIcon = document.getElementById("menu-icon");
-const menu = document.getElementById("hamburger-menu");
-
-menuIcon.addEventListener("click", () => {
-  // Toggle the 'active' class on the menu
-  menu.classList.toggle("active");
-});
-
 //! Disclimer
 
 // Check if the disclaimer has been accepted

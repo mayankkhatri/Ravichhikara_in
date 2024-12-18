@@ -1,0 +1,477 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #fafafa;
+}
+/*! Header   */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 12px;
+  margin-top: 6px;
+  border-bottom: 1px solid #ebeaeb89;
+  border-radius: 1rem;
+}
+
+.logo img {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.services-link {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+#contact-a {
+  display: inline-block;
+  height: min-content;
+  background-color: black;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 1rem;
+  transform: translateY(-4px);
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Header hover */
+.nav a:hover {
+  color: #00a36c !important;
+}
+
+/* Dropdown menu styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 60%; /* Position below the "Services" link */
+  left: 0;
+  background-color: #fff;
+  padding: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  color: #333;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/*! Header   */
+
+/*! About Dictionary  */
+
+.about-dictionary {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  /* gap: 22vw; */
+  margin: 0.65rem calc(0.7vw + 1vh);
+}
+
+.left-description {
+  margin-right: 1rem;
+  position: relative;
+  width: 38vw;
+}
+
+.left-description h1 {
+  flex-wrap: wrap;
+  font-size: calc(1.2vh + 2.5vw);
+  position: relative;
+}
+
+.voice-btn img {
+  width: calc(8vh + 8vw);
+  margin: 10px 0;
+}
+.definition p {
+  font-size: calc(0.7vh + 1.2vw);
+}
+.tags {
+  margin: 0.5rem auto;
+}
+
+.tags span {
+  font-size: calc(0.4vh + 1.2vw);
+  padding: calc(0.1vh + 0.5vw) calc(0.1vh + 1vw);
+  background-color: #8ab4f8;
+  border-radius: 2rem;
+  color: white;
+  display: inline-block;
+  margin: calc(0.3vh + 0.7vw);
+  margin-left: 0;
+}
+.flex-b {
+  display: flex;
+  text-wrap: nowrap;
+}
+
+.right-dp {
+  position: relative;
+}
+
+.right-dp img {
+  width: calc(15vh + 15vw);
+}
+
+.social-links {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 3px;
+}
+
+.social-icon {
+  margin: auto 5px;
+}
+
+.social-icon img {
+  width: calc(2vh + 3vw);
+}
+
+/*! About Dictionary  */
+
+/*!Blog Post's  */
+
+.publications {
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.left-thumb img {
+  width: calc(25vw);
+  height: calc(19vw);
+  object-fit: cover;
+  border-radius: 0.4rem;
+  box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.03),
+    -0.5px -0.5px 4px rgba(0, 0, 0, 0.03);
+}
+
+.right-dscrptn {
+  position: relative;
+  padding: calc(1vh) calc(1.5vh);
+  background-color: white;
+  border-radius: 0.4rem;
+}
+
+.heading {
+  font-size: calc(0.85vh + 0.87vw);
+  color: #2a2a2a;
+}
+
+.post-body {
+  font-size: calc(0.55vh + 0.76vw);
+  color: #6d6d6d;
+}
+
+.post-link {
+  position: absolute;
+  top: -13%;
+  right: 0;
+}
+
+.post-link i {
+  color: #8ab4f8;
+  font-size: calc(1.1vh + 1.5vw);
+}
+
+/*!Blog Post's  */
+
+/* !Services  */
+
+/*! Service Offered  */
+.centre-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-offered {
+  margin-top: -1rem;
+}
+.practice-img {
+  width: 50px;
+  width: clamp(3rem, 10vw, 9rem);
+  margin-right: 0.4rem;
+}
+.practice-area h4 {
+  font-size: calc(2vh + 3vw);
+}
+
+.type-service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: clamp(1rem, 5vw, 4rem);
+}
+.type-service span {
+  font-size: calc(0.3rem + 2vw);
+  font-weight: 500;
+  padding-right: 1.2rem;
+  white-space: nowrap;
+}
+.type-line {
+  width: 100%;
+  height: 1px;
+  background-color: #051020;
+}
+
+.service-tiles {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3.3vw;
+}
+
+.service-tile {
+  width: 45vw;
+  height: 45vw;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-tile img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.service-tile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+  pointer-events: none;
+  z-index: 1; /* Ensure gradient is below the text */
+}
+
+.service-name {
+  text-align: left;
+  position: absolute;
+  bottom: calc(3px + 1vw);
+  left: calc(3px + 1vw); /* Changed from margin-left for better positioning */
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+  z-index: 2; /* Ensure text is above the gradient */
+}
+
+.ri-arrow-right-circle-line {
+  margin-left: 0.3rem;
+}
+
+@media (min-width: 910px) {
+  .service-tiles {
+    gap: 2vw;
+  }
+  .service-tile {
+    width: 20vw;
+    height: 20vw;
+    background-color: red;
+  }
+}
+/* !Services  */
+
+/*! Contact Section  */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.03),
+    -0.5px -0.5px 4px rgba(0, 0, 0, 0.03);
+}
+
+.contact-info,
+.contact-form {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #051020;
+}
+.contact-info h2,
+.contact-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.contact-info h2::after,
+.contact-form h2::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #00a36c;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+
+.contact-info p,
+.contact-form p {
+  font-weight: 500;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.contact-form form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.contact-form button {
+  padding: 15px 30px;
+  background-color: #00a36c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #00442d;
+}
+
+@media (min-width: 768px) {
+  .contact-section {
+    flex-direction: row;
+    padding: 2rem;
+    border-radius: 0.45rem;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 48%;
+    margin-bottom: 0;
+  }
+
+  .form-group {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-group input,
+  .form-group select {
+    width: 48%;
+  }
+
+  .form-group input:not(:last-child),
+  .form-group select:not(:last-child) {
+    margin-right: 4%;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-info {
+    display: none;
+  }
+
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+/*! Contact Section  */

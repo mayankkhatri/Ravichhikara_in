@@ -8,4 +8,12 @@
   .chat-box {
     margin: 5rem 2.5vw;
   }
+
+  .about-firm {
+    margin: calc(1.3vh + 4vw) calc();
+  }
+
+  .firm-card {
+    width: 80%; /* Full width of the screen */
+  }
 }

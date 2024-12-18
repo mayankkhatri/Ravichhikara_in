@@ -79,7 +79,7 @@ a {
   height: calc(25vw + 50vh);
   width: 100vw;
   /* Image size */
-  background-image: url("https://i.postimg.cc/2S30zZMv/fndtn-13.png");
+  background-image: url("https://github.com/mayankkhatri/site-assets/blob/main/ravi-cards/ravi%20profile%20(1).png?raw=true");
   background-size: cover;
   background-position: center;
 }
@@ -89,97 +89,31 @@ a {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 calc(1.5vw + 0.2vh);
-  background-color: rgba(0, 0, 0, 0.15); /* Transparent background */
-  backdrop-filter: blur(0.5px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  width: 100vw;
-  transition: background-color 0.3s ease; /* Smooth transition */
+  justify-content: right;
   z-index: 6;
 }
-
-/* New class for white background */
-header.scrolled {
-  background-color: white; /* Changes background color to white */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adjust shadow for visibility */
-}
-
-header nav i {
-  color: white; /* Default color for navigation text */
-  transition: color 0.3s ease; /* Smooth transition for text color */
-  font-size: 2rem;
-}
-
-.ri-menu-line {
-  font-size: 24px;
-  cursor: pointer;
-}
-
-nav {
-  position: relative;
-}
-
-header.scrolled nav i {
-  color: black; /* Changes nav text color to black when scrolled */
-}
-
-.logo {
-  width: calc(3vw + 3vh);
-  margin: 0.2rem 0;
-}
-nav p {
-  text-shadow: 0px 0px 5px #000000;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  /* font-family: "Belanosima", sans-serif; */
-  font-weight: 600;
-  font-size: calc(1.22vw + 1.25vh);
-  margin-left: calc(0.75vw + 0.6vh);
-}
-.contact-a {
-  font-weight: 800;
-  color: white;
-  text-shadow: none;
-  background-color: #ffd300;
-  padding: 0.3rem 0.6rem;
-  border-radius: 5rem;
-}
-
-/* Hidden menu styles */
-.menu {
-  position: absolute;
-  top: 100%; /* Below the nav bar */
-  right: 0;
-  background-color: #444;
-  color: white;
-  display: none;
-  flex-direction: column;
-  width: 250px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.menu a {
-  padding: 15px 20px;
-  text-decoration: none;
-  color: white;
-  border-bottom: 1px solid #555;
-}
-
-.menu a:hover {
-  background-color: #555;
-}
-
-.menu a:last-child {
-  border-bottom: none;
-}
-
-/* Show menu when active */
-.menu.active {
+.nav-bar {
   display: flex;
+  align-items: center;
+  margin: 8px 1.6vw;
+}
+
+header img {
+  display: block;
+  width: calc(2.9vh + 2vw);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+header a {
+  font-family: "Geist", sans-serif;
+  font-weight: 500;
+  color: white;
+  background-color: #051020;
+  padding: 5px 12px;
+  border-radius: 50px;
+  font-size: calc(1.1vh + 1vw);
+  display: block;
 }
 
 /*? Header  */
@@ -245,9 +179,9 @@ main {
   font-weight: 600;
   color: #253439;
   position: absolute;
-  font-size: calc(0.1vh + 4vw);
+  font-size: calc(0.2vh + 4vw);
   top: calc(20%);
-  left: calc(1% + 10vw);
+  left: calc(0.5% + 8vw);
 }
 
 /*! Ravi's Hero Section  */
@@ -255,7 +189,7 @@ main {
 /*! About the Firm Section   */
 /*? BLocks  */
 .about-firm {
-  margin: calc(1.3vh + 4vw) calc(2vw + 2px);
+  margin: calc(1.3vh + 4vw) calc(1vw + 2px);
   overflow: hidden;
   padding-bottom: 5%;
 }
@@ -321,7 +255,7 @@ main {
     -0.5px -0.5px 4px rgba(0, 0, 0, 0.03);
 }
 .card-title-r::before {
-  content: "Office of Adv. Ravi Chhikara";
+  content: "Legal Office of Ravi Singh Chhikara";
   background-color: rgba(255, 255, 255, 0.96);
   position: absolute;
   padding: calc(0.2vh + 1vw);
@@ -330,14 +264,13 @@ main {
   font-weight: 600;
   color: #ffd300;
   width: max-content;
-  font-size: calc(6.5vw);
-  left: calc(-2.5vh - 40vw);
-  top: 0;
+  font-size: calc(0.5vh + 4vw);
+  left: calc(-2.5vh - 35vw);
   border-radius: calc(0.3vh + 0.7vw);
   text-align: center;
 }
 .card-title-l2::before {
-  content: "Legal Expertise You Can Trust";
+  content: "Legal Expertise You Can Rely On";
   background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
   padding: calc(0.2vh + 1vw);
@@ -346,7 +279,7 @@ main {
   font-weight: 600;
   color: #ffd300;
   width: max-content;
-  font-size: calc(6.5vw);
+  font-size: calc(0.5vh + 4vw);
   left: 0;
   top: 0;
   border-radius: calc(0.3vh + 0.7vw);
@@ -354,20 +287,21 @@ main {
 }
 
 .ttl-three::before {
-  content: "Tailored Legal Counsel for You";
-  font-size: calc(6.35vw);
+  content: "Tailored Legal Counsel Just for You";
+  font-size: calc(0.5vh + 4vw);
+  left: calc(-2.5vh - 35vw);
 }
 
 .ttl-four::before {
-  content: "Our Reputation for Excellence";
+  content: "The Firm's Reputation for Excellence";
 }
 
 .card-details p {
-  margin-top: calc(6.5vw + 2.8vw + 0.6vh);
+  margin-top: calc(3vw + 2.8vw + 0.6vh);
   z-index: 2;
   padding: calc(0.5vh + 0.9vw);
   color: #aaa; /* Light starting color */
-  font-size: calc(3vw + 0.3vh);
+  font-size: calc(2vw + 0.3vh);
   font-weight: 500;
   transition: color 0.5s ease; /* Smooth transition for color change */
 }
@@ -375,7 +309,7 @@ main {
 .about-title {
   border-radius: calc(0.3vh + 0.7vw);
   text-align: right;
-  font-size: calc(0.5vh + 0.8vw);
+  font-size: calc(1vh + 1vw);
   color: #5b5b5b;
   font-family: "Belanosima", sans-serif;
   font-weight: 500;
@@ -420,7 +354,7 @@ main {
 }
 
 .big-stat {
-  font-size: calc(0.4vh + 2.8vw);
+  font-size: calc(0.4vh + 1.9vw);
   color: #4a4a4a;
   text-wrap: nowrap;
   text-align: center;
@@ -434,7 +368,7 @@ main {
 }
 
 .firm-stats video {
-  width: calc(1vh + 5vw);
+  width: calc(0.5vh + 3.7vw);
 }
 
 /*? BLocks  */
