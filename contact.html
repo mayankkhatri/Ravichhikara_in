@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles/contact.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo">
+        <img
+          src="https://i.postimg.cc/4x5bBMgs/Ravi-logo-circle.png"
+          alt="Advocate Ravi Chhikara Logo"
+        />
+      </a>
+      <nav class="nav">
+        <a
+          href="https://xtasy.notion.site/Ravi-s-Blog-1603d14a0a7280d6b48cc9398c401426?pvs=73"
+          >Blog</a
+        >
+        <div class="dropdown">
+          <a href="services.html" class="services-link">Services</a>
+          <div class="dropdown-menu">
+            <a href="/service/criminalcases.html">Criminal Cases</a>
+            <a href="/service/corporatelaw.html">Corporate Cases</a>
+            <a href="/service/cybercrime.html">Cyber Crime</a>
+            <a href="/services.html">View All</a>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="index.html" id="contact-a">Home</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Connect with
+            <strong>Advocate Ravi Chhikara & Associates!</strong> Drop a message
+            below and we'll reach out to you ASAP.
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <i class="ri-map-pin-2-line"></i>
+              <p>E-175, LGF, Kailash Colony - I, New Delhi - 110048</p>
+            </div>
+            <div class="information">
+              <i class="ri-mail-line"></i>
+              <p>adv.ravisinghchhikara@gmail.com</p>
+            </div>
+            <div class="information">
+              <i class="ri-phone-line"></i>
+              <p>+91 70421 31601</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="ri-facebook-box-line"></i>
+              </a>
+              <a href="#">
+                <i class="ri-twitter-x-line"></i>
+              </a>
+              <a href="#">
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a href="#">
+                <i class="ri-linkedin-box-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Name</label>
+              <span>Name</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/contact.js"></script>
+  </body>
+</html>
