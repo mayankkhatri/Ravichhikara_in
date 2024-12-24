@@ -72,116 +72,166 @@ a {
 }
 /* !Disclaimer */
 
-/*! Ravi's Hero Section  */
-/*? Ravi's Image BG  */
-.ravi-image {
-  /* Sizing  */
-  height: calc(25vw + 50vh);
-  width: 100vw;
-  /* Image size */
-  background-image: url("https://github.com/mayankkhatri/site-assets/blob/main/ravi-cards/ravi%20profile%20(1).png?raw=true");
-  background-size: cover;
-  background-position: center;
+/* !Header */
+
+/*! Header   */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 12px;
+  margin-top: 6px;
+  border-bottom: 1px solid #ebeaeb89;
+  border-radius: 1rem;
 }
 
-/*? Ravi's Image BG  */
-/*? Header  */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  z-index: 6;
-}
-.nav-bar {
-  display: flex;
-  align-items: center;
-  margin: 8px 1.6vw;
-}
-
-header img {
-  display: block;
-  width: calc(2.9vh + 2vw);
+.logo img {
+  height: 45px;
   border-radius: 50%;
-  margin-right: 10px;
 }
 
-header a {
-  font-family: "Geist", sans-serif;
+.nav {
+  display: flex;
+  gap: 10px;
+  margin-top: 1.35rem;
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 0.9rem;
   font-weight: 500;
-  color: white;
-  background-color: #051020;
-  padding: 5px 12px;
-  border-radius: 50px;
-  font-size: calc(1.1vh + 1vw);
-  display: block;
 }
 
-/*? Header  */
+.services-link {
+  display: block;
+  margin-bottom: 2rem;
+}
 
-/* ? Side Videos */
-main {
+#contact-a {
+  display: inline-block;
+  height: min-content;
+  background-color: black;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 1rem;
+  transform: translateY(-4px);
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Header hover */
+.nav a:hover {
+  color: #00a36c !important;
+}
+
+/* Dropdown menu styles */
+.dropdown {
   position: relative;
 }
+
+.dropdown-menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 60%; /* Position below the "Services" link */
+  left: 0;
+  background-color: #fff;
+  padding: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  color: #333;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/*! Header   */
+
+/* !Header */
+
+/*! Ravi's Hero Section  */
 
 .hero {
-  overflow: hidden;
-  padding-bottom: 5%;
-}
-
-.right-pages {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0.5rem 1rem;
 }
-
-.right-pages {
-  position: absolute;
-  top: 10%;
-  right: 0;
-  height: calc(25vw + 50vh - calc(3vw + 3vh + 0.65rem));
-  background-color: #faf7f0;
-  border-top-left-radius: 0.8rem;
-}
-
-.right-pages video {
-  /* width: calc((25vw + 50vh - calc(3vw + 3vh + 0.65rem)) / 3);
-  height: calc((25vw + 50vh - calc(3vw + 3vh + 0.65rem)) / 3); */
-  width: 100%;
-  margin: 0;
-  border-radius: calc(0.5vh + 0.75vw);
-}
-
-.exp-vid {
-  width: calc((25vw + 50vh - calc(3vw + 3vh + 0.65rem)) / 3);
-  height: calc((25vw + 50vh - calc(3vw + 3vh + 0.65rem)) / 3);
-  padding: 1rem 1rem 0rem 1rem;
-}
-
-/* ? Side Videos */
-.ravi-image {
+.circle-dp {
   position: relative;
 }
 
-.ylw-stroke {
-  z-index: 1;
-  position: absolute;
-  bottom: calc(-0.65vh - 4.5vw);
-  left: -1%;
-  width: calc(105vw - ((25vw + 50vh - calc(3vw + 3vh + 0.65rem)) / 3));
-}
-.ylw-stroke img {
-  width: calc(105vw - ((25vw + 50vh - calc(3vw + 3vh + 0.65rem)) / 3));
-  height: 10%;
+.ravi-dp {
+  width: calc(5vh + 40vw);
+  object-fit: cover;
 }
 
-.name {
-  font-family: "Belanosima", sans-serif;
-  font-weight: 600;
-  color: #253439;
+.contact-btn {
   position: absolute;
-  font-size: calc(0.2vh + 4vw);
-  top: calc(20%);
-  left: calc(0.5% + 8vw);
+  bottom: -10px;
+  left: 5%;
+}
+
+.contact-btn img {
+  height: calc(2vh + 8vw);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(5deg);
+  }
+  66% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.contact-btn {
+  animation: rotate 2s infinite;
+}
+
+.stats {
+  position: absolute;
+  bottom: -5%;
+  left: 40%;
+}
+
+.stats img {
+  height: calc(1.7vh + 7.7vw);
+}
+
+.welcome-msg h1 {
+  font-size: calc(3.2vw + 1.65vh);
+  margin-left: calc(1vh + 1.3vw);
+}
+
+@media (min-width: 850px) {
+  .welcome-msg h1 {
+    font-size: calc(6vw + 2.5vh);
+    margin-left: calc(1vh + 1.3vw);
+  }
 }
 
 /*! Ravi's Hero Section  */
@@ -301,7 +351,7 @@ main {
   z-index: 2;
   padding: calc(0.5vh + 0.9vw);
   color: #aaa; /* Light starting color */
-  font-size: calc(2vw + 0.3vh);
+  font-size: calc(2vw + 0.45vh);
   font-weight: 500;
   transition: color 0.5s ease; /* Smooth transition for color change */
 }
@@ -898,96 +948,6 @@ main {
   }
 }
 /*!Blog  */
-/*! Testimonials   */
-
-/* Reviews */
-
-.center-txt-t {
-  margin-top: 1rem;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.reviews-section {
-  text-align: center;
-  margin: 20px;
-}
-
-.review-heading {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1.2rem;
-}
-.reviews-section h2 {
-  font-weight: 550;
-}
-
-.rev-sum {
-  margin-bottom: 0.6rem;
-}
-.review-card {
-  border: 1px solid #ddd;
-  background-color: white;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 10px;
-  cursor: pointer;
-  width: 55vw;
-  position: relative;
-}
-
-.google-icon {
-  position: absolute;
-  width: 32px;
-  right: 10px;
-  top: 10px;
-}
-
-.review-card p {
-  font-size: 0.7rem;
-}
-.review-card img {
-  border-radius: 50%;
-}
-.write-review-btn {
-  background-color: #007bff;
-  padding: 5px 12px;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 0.8rem;
-}
-
-@media (min-width: 768px) {
-  .review-heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1.2rem;
-    padding: 0 2rem;
-  }
-
-  .review-card {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    cursor: pointer;
-    width: 350px;
-    position: relative;
-  }
-
-  .review-card p {
-    font-size: 0.85rem;
-  }
-  .review-card img {
-    border-radius: 50%;
-  }
-}
-/*! Testimonials   */
 
 /*! Contact Me   */
 .contact-me {
