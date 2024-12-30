@@ -305,7 +305,7 @@ a {
     -0.5px -0.5px 4px rgba(0, 0, 0, 0.03);
 }
 .card-title-r::before {
-  content: "Legal Office of Ravi Singh Chhikara";
+  content: "The Office of Ravi Singh Chhikara";
   background-color: rgba(255, 255, 255, 0.96);
   position: absolute;
   padding: calc(0.2vh + 1vw);
