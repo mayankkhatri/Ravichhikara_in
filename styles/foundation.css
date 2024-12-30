@@ -426,7 +426,6 @@ body {
   .service-tile {
     width: 20vw;
     height: 20vw;
-    background-color: red;
   }
   .steps-video {
     width: 65vw;
@@ -522,7 +521,7 @@ body {
 }
 
 .form-box button {
-  background-color: #6a4ee9;
+  background-color: #018f61;
   color: white;
   padding: 0.2rem 0.8rem;
   border: none;
