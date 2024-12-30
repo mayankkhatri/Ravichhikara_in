@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /cgi-bin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /config/
+
+# Allow everything else
+Allow: /
+
+# Sitemap URL
+Sitemap: https://www.ravichhikara.com/sitemap.xml
