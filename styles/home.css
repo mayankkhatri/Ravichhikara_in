@@ -503,9 +503,24 @@ a {
 
 /*! About Me Section  */
 
+/*! Foundation Banner */
+
+.foundation-banner {
+  margin: calc(1vh + 5vw) 0;
+  margin-top: calc(2vh + 7vw);
+}
+
+.foundation-banner img {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+/*! Foundation Banner */
+
 /*! Whatsapp chat   */
 .chat-box {
   margin: 5rem 2vh;
+  margin-top: 2rem;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
