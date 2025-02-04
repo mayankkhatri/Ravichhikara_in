@@ -8,7 +8,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", serif;
+  font-family: "Tinos", serif !important;
 }
 
 a {
@@ -121,14 +121,12 @@ body {
 
 .hero-content h1 {
   font-size: calc(1vh + 2.2vw);
-  text-wrap: nowrap;
 }
 
 .left-text-form {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  max-width: 100%; /* Make the image responsive */
   height: auto; /* Maintain aspect ratio */
 }
 .left-text-form p {
@@ -185,11 +183,78 @@ body {
 }
 
 .right-img {
+  display: grid;
+  place-items: center;
 }
 
 .right-img img {
-  max-width: 100%; /* Make the image responsive */
+  max-width: 92%; /* Make the image responsive */
   height: auto; /* Maintain aspect ratio */
+}
+
+@keyframes growShrink {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.076);
+  }
+}
+
+.right-img img {
+  animation: growShrink 15s infinite;
+}
+
+@media (min-width: 760px) {
+  .form-mail span {
+    font-size: calc(0.6vh + 1vw);
+  }
+  .hero-content h1 {
+    font-size: calc(1.5vh + 3.2vw);
+    text-wrap: nowrap;
+  }
+  .left-text-form p {
+    font-size: calc(0.97vh + 1.67vw);
+  }
+
+  .form-box input:placeholder-shown {
+    font-size: calc(0.9vh + 1.5vw);
+  }
+
+  .form-box input {
+    height: calc(1.7vh + 4vw);
+  }
+
+  .form-box {
+    margin: 0.7rem 0;
+  }
+
+  .form-box button {
+    font-size: calc(0.9vh + 1.5vw);
+    height: calc(1.7vh + 4vw);
+  }
+
+  .hero-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .left-text-form {
+    max-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: calc(0.5vh + 1.8vw);
+  }
+  .right-img {
+    max-width: 45vw;
+    display: grid;
+    place-items: center;
+  }
+  .right-img img {
+    max-width: 75%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
 }
 
 /*! Hero Section  */
@@ -198,6 +263,12 @@ body {
 
 .posts {
   margin: 1rem 0;
+}
+
+@media (min-width: 760px) {
+  .posts {
+    margin: 2.5rem 0;
+  }
 }
 
 .posts h4 {
@@ -252,6 +323,11 @@ body {
   height: auto;
   border-radius: 10px;
   border: 1px solid #ebeaeb;
+}
+
+.post-card p {
+  font-size: 0.9rem;
+  color: #3b3b3b;
 }
 
 .post-card img {

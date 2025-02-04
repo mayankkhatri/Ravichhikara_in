@@ -237,6 +237,30 @@ body {
 
 /*!Blog Post's  */
 
+@media (min-width: 1024px) {
+  .left-thumb img {
+    width: 25vw;
+    height: 11vw;
+  }
+  .heading {
+    font-size: calc(1.15vh + 1.1vw);
+    color: #2a2a2a;
+    margin-bottom: 0.25rem;
+  }
+
+  .post-body {
+    font-size: calc(0.85vh + 0.76vw);
+    color: #6d6d6d;
+  }
+
+  .right-dscrptn {
+    position: relative;
+    padding: calc(2vh) calc(3.5vh);
+    background-color: white;
+    border-radius: 0.4rem;
+  }
+}
+
 /* !Services  */
 
 /*! Service Offered  */

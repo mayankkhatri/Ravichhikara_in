@@ -2,6 +2,17 @@
 const pressReleases = [
   {
     title:
+      "Domestic violence has no gender: Why husbands need legal protection too",
+    description:
+      "What happens when the law becomes a tool for extortion? Why does the law’s empathy often falter when the victim is a man, leaving them to suffer in silence?... ",
+    link: "https://www.newindianexpress.com/web-only/2025/Jan/23/domestic-violence-has-no-gender-why-husbands-need-legal-protection-too",
+    date: "24/01/2025",
+    timeRead: "5 Min",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3FEk6Sm_uqrC0JBZxE49BgUO7xNDYMTLzmQ&s",
+  },
+  {
+    title:
       "How is Bombay High Court’s blanket order a passive killing of dogs?",
     description:
       "Undoubtedly, the population of stray dogs is increasing at a break-neck speed. Every day, one can hear cases of dog bites which indeed is a behaviour to control... ",
