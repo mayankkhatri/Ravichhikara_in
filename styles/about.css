@@ -180,6 +180,23 @@ body {
 
 /*! About Dictionary  */
 
+/* !Documentary */
+
+.doc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+iframe {
+  width: 80%;
+  height: calc(20vh + 30vw);
+  margin: 2rem auto;
+  border-radius: 1rem;
+}
+
+/* !Documentary */
+
 /*!Blog Post's  */
 
 .posts {
