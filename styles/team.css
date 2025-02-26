@@ -1,0 +1,352 @@
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+  margin: 0;
+  color: #333;
+  background-color: #fafafa;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/*! Header   */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 12px;
+  margin-top: 6px;
+  border-bottom: 1px solid #ebeaeb89;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+
+.logo img {
+  height: 45px;
+  border-radius: 50%;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  margin-top: 1.35rem;
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.services-link {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+#contact-a {
+  display: inline-block;
+  height: min-content;
+  background-color: black;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 1rem;
+  transform: translateY(-4px);
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Header hover */
+.nav a:hover {
+  color: #00a36c !important;
+}
+
+/* Dropdown menu styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 60%; /* Position below the "Services" link */
+  left: 0;
+  background-color: #fff;
+  padding: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  color: #333;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/*! Header   */
+.container {
+  margin: 0 auto;
+  margin: 20px;
+  padding-top: 0;
+}
+
+/* --- Header Section with Image --- */
+.header-section {
+  padding: 10px 20px; /* Adjusted padding, added horizontal padding */
+  background-color: #fafafa; /* Ensure background is consistent */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically by default (mobile) */
+  align-items: flex-start; /* Align text to the start */
+  position: relative; /* For image positioning */
+}
+
+/* Header Text Container */
+.header-text-container {
+  margin-right: 0; /* No right margin on mobile */
+  margin-bottom: 20px; /* Add margin below text on mobile */
+}
+
+.header-section h1 {
+  font-size: 3.5em;
+  color: #051020;
+  margin-bottom: 10px;
+  margin-left: 0; /* Reset left margin */
+  margin-top: 0;
+}
+
+.header-section h2 {
+  font-size: 1.8em;
+  color: #018f61;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-left: 0; /* Reset left margin */
+}
+
+.header-section p {
+  color: #333;
+  font-size: 1.2rem;
+  margin-left: 0; /* Reset left margin */
+  margin-right: 0; /* Reset right margin */
+  max-width: 700px;
+}
+
+/* Header Image Styles */
+.header-image {
+  max-width: 300px; /* Adjust size as needed */
+  height: auto;
+}
+
+/* Media query for desktop layout */
+@media (min-width: 992px) {
+  /* Example breakpoint, adjust as needed */
+  .header-section {
+    flex-direction: row; /* Arrange items in a row on desktop */
+    align-items: center; /* Vertically align items in header */
+    justify-content: space-between; /* Space between text and image */
+  }
+  .header-text-container {
+    margin-right: 30px; /* Add right margin to text container on desktop */
+    margin-bottom: 0; /* Remove bottom margin on desktop */
+    flex: 1; /* Allow text to take remaining space */
+  }
+
+  .header-image {
+    max-width: 40%; /* Adjust image size relative to header */
+    margin-left: 20px; /* Space between text and image */
+  }
+  .container {
+  }
+}
+
+/* --- Team Section General --- (No changes here from your provided CSS)*/
+.team-section {
+  padding: 20px 0;
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 2.5rem;
+  border-radius: 5px;
+}
+
+.team-section h2 {
+  font-size: 2.4em;
+  color: #051020;
+  margin-bottom: 5px;
+  border-bottom: 3px solid #018f61;
+  padding-bottom: 5px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.team-section h3 {
+  font-size: 1.7em;
+  color: #555;
+  margin-bottom: 35px;
+  font-weight: normal;
+  margin-left: 20px;
+}
+
+/* --- Member Styles --- (No changes here from your provided CSS)*/
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 35px;
+  padding: 0 20px;
+}
+
+.member {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.025);
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.member:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.member-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.member-details {
+  padding: 25px;
+}
+
+.member-name {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #051020;
+  margin-bottom: 10px;
+}
+
+.member-title {
+  font-style: italic;
+  color: #777;
+  margin-bottom: 18px;
+}
+
+.member-info-item {
+  margin-bottom: 10px;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.member-info-item i {
+  margin-right: 10px;
+  color: #018f61;
+}
+
+.practice-areas-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+
+.practice-areas-list li {
+  margin-bottom: 6px;
+  color: #555;
+  position: relative;
+  padding-left: 20px;
+}
+
+.practice-areas-list li::before {
+  content: "\f058";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 2px;
+  top: 3px;
+  color: #018f61;
+  font-size: 0.9em;
+}
+
+/* --- Why Our Team Stands Apart --- (No changes here from your provided CSS)*/
+.why-apart-section {
+  background-color: #f8fafb;
+  padding: 60px 0;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.why-apart-section h2 {
+  display: block;
+  text-align: center;
+  margin-bottom: 25px;
+  border-bottom: none;
+  color: #051020;
+}
+
+.why-apart-section p {
+  font-size: 1.2em;
+  color: #555;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* --- Call to Action Section --- (No changes here from your provided CSS)*/
+.call-to-action-section {
+  background-color: #e6ecef;
+  padding: 50px 1rem;
+  text-align: center;
+  margin: 0 -20px;
+  margin-top: 2rem;
+}
+
+.call-to-action-section p {
+  font-size: 1.4em;
+  color: #051020;
+  margin-bottom: 25px;
+}
+
+.call-to-action-section a.button {
+  display: inline-block;
+  padding: 14px 35px;
+  background-color: #018f61;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.call-to-action-section a.button:hover {
+  background-color: #051020;
+}
+
+.member-details h3 {
+  margin-left: 0;
+  margin-bottom: 5px;
+}
+/* --- Footer --- (No changes here from your provided CSS)*/
+.footer {
+  text-align: center;
+  padding: 35px 0;
+  color: #999;
+  background-color: #051020;
+  font-size: 0.95em;
+}
+.footer .container {
+  color: #fff;
+}
