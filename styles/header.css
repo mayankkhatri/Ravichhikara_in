@@ -1,0 +1,180 @@
+/*! Header   */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 12px;
+  margin-top: 6px;
+  border-bottom: 1px solid #ebeaeb89;
+  border-radius: 1rem;
+  position: relative; /* Added for positioning hamburger menu */
+}
+
+.logo img {
+  height: 45px;
+  border-radius: 50%;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  margin-top: 1.35rem;
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.services-link {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+#contact-a {
+  color: #00a36c;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Header hover */
+.nav a:hover {
+  color: #00a36c !important;
+}
+
+/* Dropdown menu styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%; /* Position below the "Services" link in desktop version, adjust if needed */
+  right: 0; /* Align to the right of the dropdown parent */
+  background-color: #fff;
+  padding: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  z-index: 1000;
+  transform-origin: top right; /* Set transform origin for animation if needed */
+}
+
+.dropdown-menu a {
+  color: #333;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+  display: none; /* Hidden on desktop initially */
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  right: 20px; /* Adjust position as needed */
+  transform: translateY(-50%);
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 3px 0;
+  transition: transform 0.4s ease, opacity 0.4s ease; /* Add transition for animation */
+}
+
+/* Hamburger to Cross Animation */
+.hamburger-menu.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px); /* Rotate top bar to cross */
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+  opacity: 0; /* Hide the middle bar */
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -6px); /* Rotate bottom bar to cross */
+}
+
+/* Mobile Styles (Media Query) */
+@media (max-width: 768px) {
+  .nav {
+    display: none; /* Hide navigation menu on mobile by default */
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Position below header */
+    right: 10px;
+    background-color: white; /* Or any background color you prefer */
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    z-index: 9999; /* Ensure it's above other content if needed */
+    border-radius: 15px;
+  }
+
+  .nav.active {
+    display: flex; /* Show navigation menu when active class is added */
+    width: 50%;
+  }
+
+  .nav a,
+  .nav .services-link {
+    padding: 10px 20px;
+    display: block; /* Make each link full width in mobile nav */
+    margin-bottom: 0; /* Reset margin from desktop styles */
+  }
+
+  .dropdown-menu {
+    position: static; /* Adjust dropdown position for mobile */
+    box-shadow: none;
+    width: 100%;
+    text-align: center;
+    top: auto; /* Reset top if set for desktop - let it flow normally in mobile nav */
+    right: auto; /* Reset right */
+    transform-origin: top center; /* Reset transform origin for mobile dropdown */
+  }
+
+  .dropdown:hover .dropdown-menu, /* Prevent hover behavior on mobile - keep dropdown open when active */
+        .dropdown.active .dropdown-menu {
+    display: flex; /* Ensure dropdown shows as flex to arrange items vertically */
+    flex-direction: column;
+  }
+
+  .dropdown-menu a {
+    padding: 10px 20px;
+  }
+
+  .hamburger-menu {
+    display: flex; /* Show hamburger menu on mobile */
+  }
+
+  .header .nav {
+    /* Specificity to override inline styles if any */
+    margin-top: 0; /* Reset margin from desktop nav */
+  }
+
+  #contact-a {
+    transform: translateY(0px); /* Reset transform for mobile */
+  }
+}
+/*! Header   */

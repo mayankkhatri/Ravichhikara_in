@@ -19,6 +19,7 @@
     />
     <link rel="stylesheet" href="styles/home.css" />
     <link rel="stylesheet" href="styles/home-desktop.css" />
+    <link rel="stylesheet" href="styles/header.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css"
@@ -26,6 +27,10 @@
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -54,7 +59,6 @@
     <!--! Disclaimer  -->
 
     <!--!Header  -->
-
     <header class="header">
       <a href="index.html" class="logo">
         <img
@@ -62,6 +66,13 @@
           alt="Advocate Ravi Chhikara Logo"
         />
       </a>
+
+      <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
       <nav class="nav">
         <a href="/foundation.html">Foundation</a>
         <a href="/blog.html">Blog</a>
@@ -75,10 +86,10 @@
           </div>
         </div>
         <a href="about.html">About</a>
+        <a href="team.html">Team</a>
         <a href="contact.html" id="contact-a">Contact</a>
       </nav>
     </header>
-
     <!--!Header  -->
 
     <main>
@@ -487,11 +498,38 @@
       <!-- ! Honorable Mention -->
 
       <section class="honorable">
-        <img
-          loading="lazy"
-          src="https://github.com/mayankkhatri/site-assets/blob/main/ravi-cards/Aswani%20(3).png?raw=true"
-          alt="Some Detials about Adv. Ashwani "
-        />
+        <!-- --- Swiper HTML Structure with Linked Images --- -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <a href="/team.html">
+                <img
+                  src="https://i.postimg.cc/qqQhGw6k/Team-Member.png"
+                  alt="Team Member 1"
+                />
+              </a>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <a href="/team.html">
+                <img
+                  src="https://i.postimg.cc/htXz99DB/Team-Member-1.png"
+                  alt="Team Member 2"
+                />
+              </a>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <a href="/team.html">
+                <img
+                  src="https://raw.githubusercontent.com/mayankkhatri/site-assets/main/ravi-cards/Aswani%20(3).png"
+                  alt="Team Member 3"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- ! Honorable Mention -->
 
@@ -925,6 +963,11 @@
 
       <!--!Contact Me  -->
     </main>
+    <!-- --- JavaScript for Swiper --- -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/swiperteam.js"></script>
+
+    <script src="scripts/header.js"></script>
 
     <!-- todo Imports -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>

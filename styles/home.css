@@ -73,97 +73,7 @@ a {
 /* !Disclaimer */
 
 /* !Header */
-
-/*! Header   */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 12px;
-  margin-top: 6px;
-  border-bottom: 1px solid #ebeaeb89;
-  border-radius: 1rem;
-}
-
-.logo img {
-  height: 45px;
-  border-radius: 50%;
-}
-
-.nav {
-  display: flex;
-  gap: 10px;
-  margin-top: 1.35rem;
-}
-
-.nav a {
-  color: black;
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-.services-link {
-  display: block;
-  margin-bottom: 2rem;
-}
-
-#contact-a {
-  display: inline-block;
-  height: min-content;
-  background-color: black;
-  color: white;
-  padding: 4px 12px;
-  border-radius: 1rem;
-  transform: translateY(-4px);
-}
-
-.nav a:hover {
-  text-decoration: underline;
-}
-
-/* Header hover */
-.nav a:hover {
-  color: #00a36c !important;
-}
-
-/* Dropdown menu styles */
-.dropdown {
-  position: relative;
-}
-
-.dropdown-menu {
-  display: none; /* Hidden by default */
-  position: absolute;
-  top: 60%; /* Position below the "Services" link */
-  left: 0;
-  background-color: #fff;
-  padding: 10px 0;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  min-width: 150px;
-  z-index: 1000;
-}
-
-.dropdown-menu a {
-  color: #333;
-  padding: 10px 20px;
-  display: block;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.dropdown-menu a:hover {
-  background-color: #f0f0f0;
-}
-
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-/*! Header   */
-
+/* in header.css */
 /* !Header */
 
 /*! Ravi's Hero Section  */
@@ -886,14 +796,46 @@ a {
 
 /*! honorable   */
 
+/* --- Swiper Container Styles --- */
 .honorable {
-  margin: 2.5rem 0;
+  margin-bottom: 3rem;
+}
+.swiper {
+  width: 100%; /* Full width of the parent */
+  height: auto; /* Height will be determined by slide content (images) */
 }
 
-.honorable img {
+.swiper-wrapper {
+  display: flex; /* Important for Swiper to work */
   width: 100%;
+  height: auto; /* Height will be determined by slides */
 }
 
+.swiper-slide {
+  width: 100%; /* Each slide takes full width */
+  height: auto; /* Height adjusts to image height */
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide a {
+  display: block; /* Make the anchor fill the entire slide */
+  width: 100%;
+  height: 100%;
+  text-decoration: none; /* Remove default link underline */
+  color: inherit; /* Inherit text color from parent if needed */
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%; /* Image takes full width of the slide */
+  height: auto; /* Maintain aspect ratio, height adjusts accordingly */
+  object-fit: contain; /* Ensures image fits within the slide without distortion, showing full image */
+}
 /*! honorable   */
 /*!Blog  */
 

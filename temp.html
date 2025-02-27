@@ -3,104 +3,265 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog Posts</title>
+    <title>Header with Hamburger Menu and Animated Cross</title>
     <style>
-      .card {
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        overflow: hidden;
-        margin: 16px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        display: inline-block;
-        width: 300px;
-        text-align: center;
+      body {
+        font-family: Poppins;
       }
-      .card img {
-        width: 100%;
-        height: 180px;
-        object-fit: cover;
+      /*! Header   */
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 12px;
+        margin-top: 6px;
+        border-bottom: 1px solid #ebeaeb89;
+        border-radius: 1rem;
+        position: relative; /* Added for positioning hamburger menu */
       }
-      .card h3 {
-        font-size: 18px;
-        margin: 16px 0;
+
+      .logo img {
+        height: 45px;
+        border-radius: 50%;
       }
-      .card p {
-        font-size: 14px;
-        margin: 0 16px 16px;
-        color: #555;
+
+      .nav {
+        display: flex;
+        gap: 10px;
+        margin-top: 1.35rem;
       }
-      .card a {
+
+      .nav a {
+        color: black;
         text-decoration: none;
-        color: #007bff;
-        font-weight: bold;
-        margin: 16px;
-        display: inline-block;
+        font-size: 0.9rem;
+        font-weight: 500;
       }
-      .card a:hover {
+
+      .services-link {
+        display: block;
+        margin-bottom: 2rem;
+      }
+
+      #contact-a {
+        color: #00a36c;
+      }
+
+      .nav a:hover {
         text-decoration: underline;
       }
+
+      /* Header hover */
+      .nav a:hover {
+        color: #00a36c !important;
+      }
+
+      /* Dropdown menu styles */
+      .dropdown {
+        position: relative;
+      }
+
+      .dropdown-menu {
+        display: none; /* Hidden by default */
+        position: absolute;
+        top: 100%; /* Position below the "Services" link in desktop version, adjust if needed */
+        right: 0; /* Align to the right of the dropdown parent */
+        background-color: #fff;
+        padding: 10px 0;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        min-width: 150px;
+        z-index: 1000;
+        transform-origin: top right; /* Set transform origin for animation if needed */
+      }
+
+      .dropdown-menu a {
+        color: #333;
+        padding: 10px 20px;
+        display: block;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+
+      .dropdown-menu a:hover {
+        background-color: #f0f0f0;
+      }
+
+      /* Show dropdown on hover */
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+
+      /* Hamburger Menu Styles */
+      .hamburger-menu {
+        display: none; /* Hidden on desktop initially */
+        flex-direction: column;
+        cursor: pointer;
+        padding: 10px;
+        position: absolute;
+        top: 50%;
+        right: 20px; /* Adjust position as needed */
+        transform: translateY(-50%);
+      }
+
+      .bar {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 3px 0;
+        transition: transform 0.4s ease, opacity 0.4s ease; /* Add transition for animation */
+      }
+
+      /* Hamburger to Cross Animation */
+      .hamburger-menu.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px); /* Rotate top bar to cross */
+      }
+
+      .hamburger-menu.active .bar:nth-child(2) {
+        opacity: 0; /* Hide the middle bar */
+      }
+
+      .hamburger-menu.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px); /* Rotate bottom bar to cross */
+      }
+
+      /* Mobile Styles (Media Query) */
+      @media (max-width: 768px) {
+        .nav {
+          display: none; /* Hide navigation menu on mobile by default */
+          flex-direction: column;
+          position: absolute;
+          top: 100%; /* Position below header */
+          right: 10px;
+          background-color: white; /* Or any background color you prefer */
+          width: 100%;
+          text-align: center;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          padding: 20px 0;
+          z-index: 999; /* Ensure it's above other content if needed */
+          border-radius: 15px;
+        }
+
+        .nav.active {
+          display: flex; /* Show navigation menu when active class is added */
+          width: 50%;
+        }
+
+        .nav a,
+        .nav .services-link {
+          padding: 10px 20px;
+          display: block; /* Make each link full width in mobile nav */
+          margin-bottom: 0; /* Reset margin from desktop styles */
+        }
+
+        .dropdown-menu {
+          position: static; /* Adjust dropdown position for mobile */
+          box-shadow: none;
+          width: 100%;
+          text-align: center;
+          top: auto; /* Reset top if set for desktop - let it flow normally in mobile nav */
+          right: auto; /* Reset right */
+          transform-origin: top center; /* Reset transform origin for mobile dropdown */
+        }
+
+        .dropdown:hover .dropdown-menu, /* Prevent hover behavior on mobile - keep dropdown open when active */
+            .dropdown.active .dropdown-menu {
+          display: flex; /* Ensure dropdown shows as flex to arrange items vertically */
+          flex-direction: column;
+        }
+
+        .dropdown-menu a {
+          padding: 10px 20px;
+        }
+
+        .hamburger-menu {
+          display: flex; /* Show hamburger menu on mobile */
+        }
+
+        .header .nav {
+          /* Specificity to override inline styles if any */
+          margin-top: 0; /* Reset margin from desktop nav */
+        }
+
+        #contact-a {
+          transform: translateY(0px); /* Reset transform for mobile */
+        }
+      }
+      /*! Header   */
     </style>
   </head>
   <body>
-    <div id="posts-container"></div>
+    <!--!Header  -->
+    <header class="header">
+      <a href="index.html" class="logo">
+        <img
+          src="https://i.postimg.cc/52YNw3V9/Ravi-logo-3-removebg-preview.png"
+          alt="Advocate Ravi Chhikara Logo"
+        />
+      </a>
+
+      <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <nav class="nav">
+        <a href="/foundation.html">Foundation</a>
+        <a href="/blog.html">Blog</a>
+        <div class="dropdown">
+          <a href="services.html" class="services-link">Services</a>
+          <div class="dropdown-menu">
+            <a href="/services.html">Criminal Cases</a>
+            <a href="/services.html">Corporate Cases</a>
+            <a href="/services.htmll">Cyber Crime</a>
+            <a href="/services.html">View All</a>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html" id="contact-a">Contact</a>
+      </nav>
+    </header>
+    <!--!Header  -->
 
     <script>
-      // WordPress REST API URL
-      const apiUrl =
-        "https://github.com/Rob--W/cors-anywhere/issues/301/https://ravichhikarablog.wordpress.com/wp-json/wp/v2/posts?per_page=10";
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const navMenu = document.querySelector(".nav");
+        const dropdown = document.querySelector(".dropdown"); // Select the dropdown container
 
-      // DOM element to display posts
-      const postsContainer = document.getElementById("posts-container");
+        hamburgerMenu.addEventListener("click", () => {
+          navMenu.classList.toggle("active");
+          hamburgerMenu.classList.toggle("active"); // Optional: for hamburger icon animation if you want to add later
 
-      // Function to fetch posts
-      async function fetchPosts() {
-        try {
-          const response = await fetch(apiUrl);
-          const posts = await response.json();
+          // Close dropdown if open when hamburger is clicked (optional)
+          if (dropdown.classList.contains("active")) {
+            dropdown.classList.remove("active");
+          }
+        });
 
-          // Loop through posts and create cards
-          posts.forEach((post) => {
-            // Extract the required data
-            const title = post.title.rendered;
-            const link = post.link;
-            const featureImage =
-              post.jetpack_featured_media_url ||
-              "https://via.placeholder.com/300x180"; // Default image if none
-            const datePublished = new Date(post.date).toLocaleDateString();
-            const content = post.content.rendered;
-            const excerpt = post.excerpt.rendered
-              ? stripHTML(post.excerpt.rendered).substring(0, 50) + "..."
-              : "No description available.";
-
-            // Create a card for each post
-            const card = document.createElement("div");
-            card.className = "card";
-
-            card.innerHTML = `
-        <img src="${featureImage}" alt="${title}">
-        <h3>${title}</h3>
-        <p>${excerpt}</p>
-        <p><strong>Published:</strong> ${datePublished}</p>
-        <a href="${link}" target="_blank">Read More</a>
-      `;
-
-            // Append card to container
-            postsContainer.appendChild(card);
+        // Handle dropdown click/tap on mobile (optional - if you want to make dropdown toggle on click on mobile)
+        if (window.innerWidth <= 768) {
+          // Check if on mobile (same breakpoint as CSS)
+          const servicesLink = document.querySelector(".services-link");
+          servicesLink.addEventListener("click", (e) => {
+            e.preventDefault(); // Prevent default link behavior
+            dropdown.classList.toggle("active"); // Toggle active class on dropdown for mobile
           });
-        } catch (error) {
-          console.error("Error fetching posts:", error);
         }
-      }
 
-      // Function to strip HTML tags from a string
-      function stripHTML(html) {
-        const div = document.createElement("div");
-        div.innerHTML = html;
-        return div.textContent || div.innerText || "";
-      }
-
-      // Call the function to fetch and display posts
-      fetchPosts();
+        // Close navigation menu when clicking outside on mobile (optional)
+        document.addEventListener("click", function (event) {
+          const isClickInsideNav =
+            navMenu.contains(event.target) ||
+            hamburgerMenu.contains(event.target);
+          if (!isClickInsideNav && navMenu.classList.contains("active")) {
+            navMenu.classList.remove("active");
+            hamburgerMenu.classList.remove("active"); // If you added active class for hamburger icon
+          }
+        });
+      });
     </script>
   </body>
 </html>
