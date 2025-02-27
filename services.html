@@ -22,6 +22,8 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="styles/header.css" />
   </head>
   <body>
     <body>
@@ -33,13 +35,27 @@
             alt="Advocate Ravi Chhikara Logo"
           />
         </a>
+
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
         <nav class="nav">
           <a href="/foundation.html">Foundation</a>
           <a href="/blog.html">Blog</a>
           <div class="dropdown">
-            <a href="/index.html" class="services-link">Home</a>
+            <a href="services.html" class="services-link">Services</a>
+            <div class="dropdown-menu">
+              <a href="/services.html">Criminal Cases</a>
+              <a href="/services.html">Corporate Cases</a>
+              <a href="/services.htmll">Cyber Crime</a>
+              <a href="/services.html">View All</a>
+            </div>
           </div>
           <a href="about.html">About</a>
+          <a href="team.html">Team</a>
           <a href="contact.html" id="contact-a">Contact</a>
         </nav>
       </header>
@@ -673,6 +689,7 @@
       <!--!Contact Popup  -->
 
       <!--! Services Tiles -->
+      <script src="scripts/header.js"></script>
       <script src="scripts/animations.js"></script>
     </body>
   </body>
